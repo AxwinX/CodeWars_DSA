@@ -32,3 +32,9 @@ def solution(array_a, array_b):
 
 # Dont forget to print the result to see the output
 print(solution(a,b))
+
+
+
+# Alternative solution using list comprehension
+def solution(array_a, array_b): 
+    return sum((a - b) ** 2 for a, b in zip(array_a, array_b)) / len(array_a)
